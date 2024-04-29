@@ -11,7 +11,6 @@ if [[ "system_version" =~ "aarch64" ]]; then
    wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz -P ~/
    rm -rf /usr/local/go
    tar -C /usr/local -xzf ~/go1.21.0.linux-amd64.tar.gz
-   echo "PATH=\"~/go/bin/:$PATH\"" >> ~/.bashrc && source ~/.bashrc
 elif [[ "system_version" =~ "arm64" ]]; then
   echo "moo"
 else

@@ -13,7 +13,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
       NODE_TYPE='VALIDATING' \
       NODE_INDEXER="kv" \
       NODE_INDEXER_PG_CONNECTION="" \
-      LAUNCH_METHOD="AUTOMATIC"
+      LAUNCH_METHOD="AUTOMATIC" \
+      PATH="${PATH}:/usr/local/go"
 
 # Install packages
 RUN apt-get update && \
