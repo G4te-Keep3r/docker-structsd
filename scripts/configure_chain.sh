@@ -15,8 +15,8 @@ then
     cd structsd
     ignite chain build
 
-    structsd keys add $MONIKERv
-    structsd keys add $MONIKERp
+    structsd keys add {$MONIKER}v
+    structsd keys add {$MONIKER}p
 
   fi
 	touch /var/structs/ready
