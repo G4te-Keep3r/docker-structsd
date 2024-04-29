@@ -3,6 +3,7 @@
 # launch the Structs blockchain
 if [[ $LAUNCH_METHOD == "AUTOMATIC" ]];
 then
+	PATH
     echo "Launching chain without delay...";
 
     # Setup Chain

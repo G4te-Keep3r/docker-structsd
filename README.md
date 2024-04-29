@@ -12,7 +12,7 @@ In the distant future the species of the galaxy are embroiled in a race for Alph
 ```
 git clone git@github.com:playstructs/docker-structsd.git
 cd docker-structsd
-docker build -t localstructs88 --build-arg="MONIKER=monikerhereeeeeeeee" .
+docker build -t localstructs88 --build-arg="monarg=monikerhereeeeeeeee" .
 ```
 
 # How to Use this Image

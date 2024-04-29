@@ -4,17 +4,19 @@ FROM ubuntu:23.10
 # Information
 LABEL maintainer="Slow Ninja <info@slow.ninja>"
 
+ARG monarg
+
 # Variables
 ENV DEBIAN_FRONTEND=noninteractive \
-      MONIKER="------------------------------------------" \
+      MONIKER=$monarg \
       NETWORK_VERSION="88" \
       NETWORK_TYPE="testnet" \
       NETWORK_CHAIN_ID="structstestnet-88" \
       NODE_TYPE='VALIDATING' \
       NODE_INDEXER="kv" \
       NODE_INDEXER_PG_CONNECTION="" \
-      LAUNCH_METHOD="AUTOMATIC" \
-      PATH="${PATH}:/usr/local/go"
+      LAUNCH_METHOD="AUTOMATIC"
+
 
 # Install packages
 RUN apt-get update && \
@@ -27,7 +29,8 @@ RUN apt-get update && \
         &&  \
     rm -rf /var/lib/apt/lists/*
 
-ENV PATH=$PATH:/usr/local/go/bin
+#ENV PATH=$PATH:/usr/local/go/bin
+ENV PATH=$PATH:/root/go/bin
 
 # Put this file into place so that the ignite command does not
 # get stuck waiting for input
