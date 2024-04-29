@@ -12,7 +12,7 @@ In the distant future the species of the galaxy are embroiled in a race for Alph
 ```
 git clone git@github.com:playstructs/docker-structsd.git
 cd docker-structsd
-docker build --build-arg="MONIKER=monikerhereeeeeeeee" .
+docker build -t localstructs88 --build-arg="MONIKER=monikerhereeeeeeeee" .
 ```
 
 # How to Use this Image
@@ -32,6 +32,8 @@ A good way to run for development and for continual monitoring is to attach to t
 ```
 docker run -it --rm -p 26656:26656 --name=structsd structs/structsd:latest
 ```
+
+replace structs/structsd:latest with localstructs88 for the one you just built
 
 # Learn more
 
