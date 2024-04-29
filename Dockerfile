@@ -6,11 +6,11 @@ LABEL maintainer="Slow Ninja <info@slow.ninja>"
 
 # Variables
 ENV DEBIAN_FRONTEND=noninteractive \
-      MONIKER="UnknownGuild" \
-      NETWORK_VERSION="74b" \
+      MONIKER="------------------------------------------" \
+      NETWORK_VERSION="88" \
       NETWORK_TYPE="testnet" \
-      NETWORK_CHAIN_ID="structstestnet-74" \
-      NODE_TYPE='NONVALIDATING' \
+      NETWORK_CHAIN_ID="structstestnet-88" \
+      NODE_TYPE='VALIDATING' \
       NODE_INDEXER="kv" \
       NODE_INDEXER_PG_CONNECTION="" \
       LAUNCH_METHOD="AUTOMATIC"
