@@ -66,4 +66,5 @@ EXPOSE 1317
 VOLUME [ "/var/structs" ]
 
 # Run Structs
-CMD [ "/src/structs/start_structsd.sh" ]
+#CMD [ "/src/structs/start_structsd.sh" ]
+CMD [ "/src/structs/configure_chain.sh" ]
