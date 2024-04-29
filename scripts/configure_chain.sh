@@ -9,7 +9,7 @@ git clone --branch v0.2.0-beta https://github.com/playstructs/structsd.git
 cd structsd
 ignite chain build
 
-structsd keys add {$MONIKER}v
-structsd keys add {$MONIKER}p
+structsd keys add $MONIKER"v"
+structsd keys add $MONIKER"p"
 
 touch /var/structs/ready
