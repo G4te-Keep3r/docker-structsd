@@ -13,6 +13,7 @@ tldr need unique container for each docker. Change name in container_name.txt if
 
 
 # How to Build
+****************************************need work here, also didn't say where to chain that stuff (scripts/configure_chain.sh)
 
 BEFORE building, edit configure_chain.sh (in scripts dir). Change wallet/account names (wallet1, wallet2), add more, and/or removove 1. If you are not recovering keys in this creation (ie making new ones), remove the "--recover" line endings.
 
